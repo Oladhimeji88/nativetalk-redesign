@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;600;700;800&family=Instrument+Serif:ital@1&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;800&display=swap");
+
+@font-face { font-family: "Outfit:Regular"; src: url("https://fonts.gstatic.com/s/outfit/v15/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1C4E.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Outfit:Medium"; src: url("https://fonts.gstatic.com/s/outfit/v15/QGYyz_MVcBeNP4NjuGObqx1XmO1I4QK1C4E.ttf") format("truetype"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Outfit:SemiBold"; src: url("https://fonts.gstatic.com/s/outfit/v15/QGYyz_MVcBeNP4NjuGObqx1XmO1I4e6yC4E.ttf") format("truetype"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Outfit:ExtraBold"; src: url("https://fonts.gstatic.com/s/outfit/v15/QGYyz_MVcBeNP4NjuGObqx1XmO1I4bCyC4E.ttf") format("truetype"); font-weight: 800; font-style: normal; font-display: swap; }
+
+@font-face { font-family: "Instrument_Serif:Italic"; src: url("https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zATiw.ttf") format("truetype"); font-weight: 400; font-style: italic; font-display: swap; }
+
+@font-face { font-family: "Inter:Regular"; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Inter:Medium"; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf") format("truetype"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Inter:Semi_Bold"; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf") format("truetype"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Inter:Bold"; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
+
+@font-face { font-family: "Encode_Sans:Regular"; src: url("https://fonts.gstatic.com/s/encodesans/v23/LDIcapOFNxEwR-Bd1O9uYNmnUQomAgE25imKSbHhROjLsZBWTSrQGGHjZtU.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Encode_Sans:SemiBold"; src: url("https://fonts.gstatic.com/s/encodesans/v23/LDIcapOFNxEwR-Bd1O9uYNmnUQomAgE25imKSbHhROjLsZBWTSrQGL_kZtU.ttf") format("truetype"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Encode_Sans:Bold"; src: url("https://fonts.gstatic.com/s/encodesans/v23/LDIcapOFNxEwR-Bd1O9uYNmnUQomAgE25imKSbHhROjLsZBWTSrQGIbkZtU.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Encode_Sans:ExtraBold"; src: url("https://fonts.gstatic.com/s/encodesans/v23/LDIcapOFNxEwR-Bd1O9uYNmnUQomAgE25imKSbHhROjLsZBWTSrQGOHkZtU.ttf") format("truetype"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Encode_Sans:Black"; src: url("https://fonts.gstatic.com/s/encodesans/v23/LDIcapOFNxEwR-Bd1O9uYNmnUQomAgE25imKSbHhROjLsZBWTSrQGOHkZtU.ttf") format("truetype"); font-weight: 800; font-style: normal; font-display: swap; }

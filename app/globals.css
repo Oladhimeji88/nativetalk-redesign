@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face { font-family: "Outfit:Regular"; src: url("https://fonts.gstatic.com/s/outfit/v15/QGYyz_MVcBeNP4NjuGObqx1XmO1I4TC1C4E.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Outfit:Medium"; src: url("https://fonts.gstatic.com/s/outfit/v15/QGYyz_MVcBeNP4NjuGObqx1XmO1I4QK1C4E.ttf") format("truetype"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Outfit:SemiBold"; src: url("https://fonts.gstatic.com/s/outfit/v15/QGYyz_MVcBeNP4NjuGObqx1XmO1I4e6yC4E.ttf") format("truetype"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Outfit:ExtraBold"; src: url("https://fonts.gstatic.com/s/outfit/v15/QGYyz_MVcBeNP4NjuGObqx1XmO1I4bCyC4E.ttf") format("truetype"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Instrument_Serif:Italic"; src: url("https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zATiw.ttf") format("truetype"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Inter:Regular"; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Inter:Medium"; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf") format("truetype"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Inter:Semi_Bold"; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf") format("truetype"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Inter:Bold"; src: url("https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Encode_Sans:Regular"; src: url("https://fonts.gstatic.com/s/encodesans/v23/LDIcapOFNxEwR-Bd1O9uYNmnUQomAgE25imKSbHhROjLsZBWTSrQGGHjZtU.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Encode_Sans:SemiBold"; src: url("https://fonts.gstatic.com/s/encodesans/v23/LDIcapOFNxEwR-Bd1O9uYNmnUQomAgE25imKSbHhROjLsZBWTSrQGL_kZtU.ttf") format("truetype"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Encode_Sans:Bold"; src: url("https://fonts.gstatic.com/s/encodesans/v23/LDIcapOFNxEwR-Bd1O9uYNmnUQomAgE25imKSbHhROjLsZBWTSrQGIbkZtU.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Encode_Sans:ExtraBold"; src: url("https://fonts.gstatic.com/s/encodesans/v23/LDIcapOFNxEwR-Bd1O9uYNmnUQomAgE25imKSbHhROjLsZBWTSrQGOHkZtU.ttf") format("truetype"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Encode_Sans:Black"; src: url("https://fonts.gstatic.com/s/encodesans/v23/LDIcapOFNxEwR-Bd1O9uYNmnUQomAgE25imKSbHhROjLsZBWTSrQGOHkZtU.ttf") format("truetype"); font-weight: 800; font-style: normal; font-display: swap; }
+
+[class*="Instrument_Serif"] {
+  font-family: var(--font-serif), "Instrument Serif", Georgia, serif !important;
+  font-style: italic !important;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream text-text font-sans antialiased;
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-outfit), system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.02;
+  }
+
+  /* Serif-italic emphasis inside headings (Superside-style display).
+     Overrides the inline `not-italic text-*` utilities used in the markup so
+     emphasised words render as elegant editorial italics in the heading color. */
+  h1 em,
+  h2 em,
+  h3 em,
+  h4 em {
+    font-family: var(--font-serif), Georgia, serif;
+    font-style: italic !important;
+    font-weight: 400;
+    font-size: 1.04em;
+    letter-spacing: -0.01em;
+    color: inherit !important;
+  }
+}
+
+@layer components {
+  .wrap {
+    @apply mx-auto w-full max-w-wrap px-6 sm:px-8;
+  }
+
+  /* ===== buttons (Mistral pill) ===== */
+  .btn {
+    @apply inline-flex cursor-pointer items-center gap-2 whitespace-nowrap rounded-full border-[1.5px] border-transparent px-[23px] py-[14px] font-display text-[15px] font-semibold transition-[transform,background,color,border-color] duration-200 ease-smooth;
+  }
+  .btn svg {
+    @apply h-4 w-4;
+  }
+  /* Primary CTA — NativeTalk logo blue with white text. */
+  .btn-green {
+    @apply bg-brand text-white hover:-translate-y-0.5 hover:bg-brand-700;
+  }
+  /* Icons inside the button inherit the white text color even when markup
+     sets a different color on them (specificity + !important override). */
+  .btn-green svg {
+    color: inherit !important;
+  }
+  .btn-ink {
+    @apply bg-ink text-white hover:-translate-y-0.5 hover:bg-ink-2;
+  }
+  .btn-outline {
+    @apply border-ink/25 bg-transparent text-ink hover:-translate-y-0.5 hover:border-ink hover:bg-ink/5;
+  }
+  .btn-outline-light {
+    @apply border-white/30 bg-transparent text-white hover:-translate-y-0.5 hover:border-white hover:bg-white/10;
+  }
+
+  .eyebrow {
+    @apply mb-4 font-display text-sm font-semibold uppercase tracking-[0.06em] text-green-700;
+  }
+
+  .landing-panel {
+    @apply overflow-hidden rounded-[10px] border border-line bg-paper;
+  }
+
+  .landing-dark-panel {
+    @apply overflow-hidden rounded-[10px] bg-ink text-white;
+  }
+}
+
+@layer utilities {
+  /* ===== pixel mosaic motif ===== */
+  .mosaic {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 4px;
+    width: 100%;
+    aspect-ratio: 1;
+  }
+  .mosaic span {
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.06);
+  }
+  .px-g {
+    background: #3ebf0f !important;
+  }
+  .px-g2 {
+    background: #7fd95f !important;
+  }
+}
+
+/* ===== Rich text: shared styles for the editor + published article ===== */
+.article-editor,
+.article-content {
+  color: #16181a;
+  font-size: 18px;
+  line-height: 1.75;
+}
+.article-editor {
+  min-height: 340px;
+  padding: 22px 24px 32px;
+}
+.article-editor :focus {
+  outline: none;
+}
+.article-editor > * + *,
+.article-content > * + * {
+  margin-top: 1.15em;
+}
+.article-editor p,
+.article-content p {
+  font-size: 18px;
+  line-height: 1.75;
+  color: #2a2f2c;
+}
+.article-content > p:first-of-type {
+  font-size: 20px;
+  color: #16181a;
+}
+.article-editor h2,
+.article-content h2 {
+  font-size: clamp(26px, 3vw, 34px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  margin-top: 1.6em;
+}
+.article-editor h3,
+.article-content h3 {
+  font-size: clamp(21px, 2.4vw, 26px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-top: 1.4em;
+}
+.article-editor a,
+.article-content a {
+  color: #2f9a0a;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.article-editor blockquote,
+.article-content blockquote {
+  border-left: 3px solid #3ebf0f;
+  padding-left: 20px;
+  margin-left: 0;
+  font-size: 21px;
+  font-style: italic;
+  color: #3a423b;
+}
+.article-editor ul,
+.article-content ul,
+.article-editor ol,
+.article-content ol {
+  padding-left: 1.3em;
+}
+.article-editor ul,
+.article-content ul {
+  list-style: disc;
+}
+.article-editor ol,
+.article-content ol {
+  list-style: decimal;
+}
+.article-editor li,
+.article-content li {
+  margin-top: 0.4em;
+}
+.article-editor img,
+.article-content img {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #e7e7e2;
+}
+.article-editor hr,
+.article-content hr {
+  border: none;
+  text-align: center;
+  margin: 2em 0;
+}
+.article-editor hr::before,
+.article-content hr::before {
+  content: "· · ·";
+  letter-spacing: 0.5em;
+  color: #a9b4ad;
+  font-size: 20px;
+}
+.article-editor img.ProseMirror-selectednode {
+  outline: 3px solid #3ebf0f;
+  outline-offset: 2px;
+}
+/* Placeholder text on empty nodes */
+.article-editor p.is-editor-empty:first-child::before,
+.article-editor .is-empty::before {
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  color: #a9b4ad;
+  pointer-events: none;
+}
