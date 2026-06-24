@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { ArrowRight, CallCenterIcon, ChatIcon, CodeIcon } from "./icons";
+import { ArrowRight } from "./icons";
 
 const PLAY_STORE =
   "https://play.google.com/store/apps/details?id=nativetalk.app.business";
@@ -12,21 +12,18 @@ const PLAY_STORE =
 const PRODUCTS = [
   {
     href: "/business-app",
-    label: "Business App",
-    desc: "Calls, messages, routing, and AI in one workspace",
-    Icon: ChatIcon,
+    label: "NativeTalk Business",
+    image: "/assets/Nativetalk business.svg",
   },
   {
     href: "/crm",
-    label: "CRM",
-    desc: "Tasks, tickets, leads, and AI reports for teams",
-    Icon: CallCenterIcon,
+    label: "NativeTalk CRM",
+    image: "/assets/Nativetalkcrm.svg",
   },
   {
     href: "/voip",
-    label: "VoIP",
-    desc: "Cloud PBX, call center, and SIP infrastructure",
-    Icon: CodeIcon,
+    label: "NativeTalk VoIP",
+    image: "/assets/nativetalk voip.svg",
   },
 ];
 
@@ -123,28 +120,34 @@ export default function Nav() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 8 }}
                     transition={{ duration: 0.18, ease: [0.2, 0.8, 0.2, 1] }}
-                    className="absolute left-0 top-[calc(100%+12px)] w-[360px] rounded-[10px] border border-line-dark bg-[#102b28] p-2 shadow-[0_24px_60px_-24px_rgba(0,0,0,0.65)]"
+                    className="absolute left-0 top-[calc(100%+12px)] w-[820px] rounded-[16px] border border-black/[0.06] bg-[#ececec] p-7 text-ink shadow-[0_30px_70px_-28px_rgba(0,0,0,0.45)]"
                   >
-                    {PRODUCTS.map((p) => (
-                      <Link
-                        key={p.href}
-                        href={p.href}
-                        onClick={() => setProdOpen(false)}
-                        className="flex items-start gap-3 rounded-[8px] p-3 transition hover:bg-white/[0.08]"
-                      >
-                        <span className="grid h-10 w-10 flex-none place-items-center rounded-[8px] bg-green text-ink">
-                          <p.Icon className="h-5 w-5" />
-                        </span>
-                        <span>
-                          <b className="block font-display text-[15px] font-semibold text-white">
-                            NativeTalk {p.label}
-                          </b>
-                          <span className="text-[13px] text-muted-dark">
-                            {p.desc}
+                    <div className="mb-5 text-[15px] font-medium text-[#5b5f5c]">
+                      Our Products
+                    </div>
+                    <div className="grid grid-cols-3 gap-5">
+                      {PRODUCTS.map((p) => (
+                        <Link
+                          key={p.href}
+                          href={p.href}
+                          onClick={() => setProdOpen(false)}
+                          className="group block"
+                        >
+                          <span className="block overflow-hidden rounded-[12px] transition-transform duration-200 group-hover:-translate-y-1 group-hover:shadow-[0_18px_40px_-22px_rgba(0,0,0,0.5)]">
+                            <Image
+                              src={p.image}
+                              alt={p.label}
+                              width={371}
+                              height={210}
+                              className="h-auto w-full"
+                            />
                           </span>
-                        </span>
-                      </Link>
-                    ))}
+                          <span className="mt-3 block text-[15px] font-medium text-ink">
+                            {p.label}
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -220,17 +223,31 @@ export default function Nav() {
               </svg>
             </button>
 
-            {mobProdOpen &&
-              PRODUCTS.map((p) => (
-                <Link
-                  key={p.href}
-                  href={p.href}
-                  onClick={closeMobile}
-                  className="block rounded-[8px] py-2.5 pl-7 pr-3.5 text-[15px] text-muted-dark hover:bg-white/10"
-                >
-                  NativeTalk {p.label}
-                </Link>
-              ))}
+            {mobProdOpen && (
+              <div className="grid gap-3 px-2 pb-2 pt-1">
+                {PRODUCTS.map((p) => (
+                  <Link
+                    key={p.href}
+                    href={p.href}
+                    onClick={closeMobile}
+                    className="block"
+                  >
+                    <span className="block overflow-hidden rounded-[12px]">
+                      <Image
+                        src={p.image}
+                        alt={p.label}
+                        width={371}
+                        height={210}
+                        className="h-auto w-full"
+                      />
+                    </span>
+                    <span className="mt-2 block text-[15px] font-medium text-white">
+                      {p.label}
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            )}
 
             {LINKS.map((l) => (
               <Link
