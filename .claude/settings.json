@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:nativetalk-redesign.vercel.app)",
-      "PowerShell(cd c:\\\\Users\\\\USER\\\\Desktop\\\\nativetalk-redesign; Get-ChildItem node_modules\\\\.bin\\\\ -ErrorAction SilentlyContinue | Where-Object { $_.Name -match 'playwright|puppeteer|chrome' } | Select-Object Name; \"---PORTS---\"; Get-NetTCPConnection -State Listen -ErrorAction SilentlyContinue | Where-Object { $_.LocalPort -in 3000,3001,3002 } | Select-Object LocalPort)"
+      "PowerShell(cd c:\\\\Users\\\\USER\\\\Desktop\\\\nativetalk-redesign; Get-ChildItem node_modules\\\\.bin\\\\ -ErrorAction SilentlyContinue | Where-Object { $_.Name -match 'playwright|puppeteer|chrome' } | Select-Object Name; \"---PORTS---\"; Get-NetTCPConnection -State Listen -ErrorAction SilentlyContinue | Where-Object { $_.LocalPort -in 3000,3001,3002 } | Select-Object LocalPort)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:3000/\" -UseBasicParsing -TimeoutSec 15; \"STATUS: $\\($r.StatusCode\\)\"; \"LENGTH: $\\($r.Content.Length\\)\" } catch { \"ERR: $\\($_.Exception.Message\\)\" })"
     ]
   }
 }
