@@ -65,6 +65,19 @@ export default function Nav() {
 
   return (
     <>
+      <AnimatePresence>
+        {prodOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.18 }}
+            className="fixed inset-0 top-[78px] z-[60] hidden bg-black/20 backdrop-blur-[4px] lg:block"
+            aria-hidden="true"
+          />
+        )}
+      </AnimatePresence>
+
       <header
         className={`sticky top-0 z-[70] border-b bg-ink/95 text-[#f7f9f2] backdrop-blur-[16px] transition-colors duration-300 ${
           scrolled ? "border-white/10 shadow-[0_18px_45px_-32px_rgba(0,0,0,.8)]" : "border-transparent"
@@ -120,33 +133,35 @@ export default function Nav() {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 8 }}
                     transition={{ duration: 0.18, ease: [0.2, 0.8, 0.2, 1] }}
-                    className="absolute left-0 top-[calc(100%+12px)] w-[820px] rounded-[16px] border border-black/[0.06] bg-[#ececec] p-7 text-ink shadow-[0_30px_70px_-28px_rgba(0,0,0,0.45)]"
+                    className="fixed inset-x-0 top-[78px] border-b border-black/[0.06] bg-[#ececec] py-9 text-ink shadow-[0_30px_70px_-28px_rgba(0,0,0,0.45)]"
                   >
-                    <div className="mb-5 text-[15px] font-medium text-[#5b5f5c]">
-                      Our Products
-                    </div>
-                    <div className="grid grid-cols-3 gap-5">
-                      {PRODUCTS.map((p) => (
-                        <Link
-                          key={p.href}
-                          href={p.href}
-                          onClick={() => setProdOpen(false)}
-                          className="group block"
-                        >
-                          <span className="block overflow-hidden rounded-[12px] transition-transform duration-200 group-hover:-translate-y-1 group-hover:shadow-[0_18px_40px_-22px_rgba(0,0,0,0.5)]">
-                            <Image
-                              src={p.image}
-                              alt={p.label}
-                              width={371}
-                              height={210}
-                              className="h-auto w-full"
-                            />
-                          </span>
-                          <span className="mt-3 block text-[15px] font-medium text-ink">
-                            {p.label}
-                          </span>
-                        </Link>
-                      ))}
+                    <div className="wrap">
+                      <div className="mb-5 text-[15px] font-medium text-[#5b5f5c]">
+                        Our Products
+                      </div>
+                      <div className="grid grid-cols-3 gap-7">
+                        {PRODUCTS.map((p) => (
+                          <Link
+                            key={p.href}
+                            href={p.href}
+                            onClick={() => setProdOpen(false)}
+                            className="group block"
+                          >
+                            <span className="block overflow-hidden rounded-[12px] transition-transform duration-200 group-hover:-translate-y-1 group-hover:shadow-[0_18px_40px_-22px_rgba(0,0,0,0.5)]">
+                              <Image
+                                src={p.image}
+                                alt={p.label}
+                                width={371}
+                                height={210}
+                                className="h-auto w-full"
+                              />
+                            </span>
+                            <span className="mt-3 block text-[15px] font-medium text-ink">
+                              {p.label}
+                            </span>
+                          </Link>
+                        ))}
+                      </div>
                     </div>
                   </motion.div>
                 )}
