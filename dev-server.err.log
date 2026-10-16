@@ -1,0 +1,57 @@
+The user aborted a request.
+
+Retrying 1/3...
+The user aborted a request.
+
+Retrying 1/3...
+The user aborted a request.
+
+Retrying 1/3...
+The user aborted a request.
+
+Retrying 2/3...
+The user aborted a request.
+
+Retrying 2/3...
+The user aborted a request.
+
+Retrying 2/3...
+RangeError: Failed to allocate memory
+    at createUnsafeBuffer (node:internal/buffer:1104:25)
+    at allocate (node:buffer:491:10)
+    at Buffer.allocUnsafe (node:buffer:454:10)
+    at Gunzip.ZlibBase (node:zlib:264:28)
+    at Gunzip.Zlib (node:zlib:683:12)
+    at new Gunzip (node:zlib:753:8)
+    at value (node:zlib:962:14)
+    at C:\Users\USER\Desktop\nativetalk-redesign\node_modules\next\dist\compiled\webpack\bundle5.js:28:1217192
+    at callback (C:\Users\USER\Desktop\nativetalk-redesign\node_modules\next\dist\compiled\webpack\bundle5.js:1:278942)
+    at FSReqCallback.oncomplete (node:fs:197:5) {
+  code: 'ERR_MEMORY_ALLOCATION_FAILED'
+}
+ ⨯ uncaughtException: RangeError: Failed to allocate memory
+    at createUnsafeBuffer (node:internal/buffer:1104:25)
+    at allocate (node:buffer:491:10)
+    at Buffer.allocUnsafe (node:buffer:454:10)
+    at Gunzip.ZlibBase (node:zlib:264:28)
+    at Gunzip.Zlib (node:zlib:683:12)
+    at new Gunzip (node:zlib:753:8)
+    at value (node:zlib:962:14)
+    at C:\Users\USER\Desktop\nativetalk-redesign\node_modules\next\dist\compiled\webpack\bundle5.js:28:1217192
+    at callback (C:\Users\USER\Desktop\nativetalk-redesign\node_modules\next\dist\compiled\webpack\bundle5.js:1:278942)
+    at FSReqCallback.oncomplete (node:fs:197:5) {
+  code: 'ERR_MEMORY_ALLOCATION_FAILED'
+}
+ ⨯ uncaughtException: RangeError: Failed to allocate memory
+    at createUnsafeBuffer (node:internal/buffer:1104:25)
+    at allocate (node:buffer:491:10)
+    at Buffer.allocUnsafe (node:buffer:454:10)
+    at Gunzip.ZlibBase (node:zlib:264:28)
+    at Gunzip.Zlib (node:zlib:683:12)
+    at new Gunzip (node:zlib:753:8)
+    at value (node:zlib:962:14)
+    at C:\Users\USER\Desktop\nativetalk-redesign\node_modules\next\dist\compiled\webpack\bundle5.js:28:1217192
+    at callback (C:\Users\USER\Desktop\nativetalk-redesign\node_modules\next\dist\compiled\webpack\bundle5.js:1:278942)
+    at FSReqCallback.oncomplete (node:fs:197:5) {
+  code: 'ERR_MEMORY_ALLOCATION_FAILED'
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "slug": "howto-beat-a-man",
+    "title": "HowTo Beat A MAN",
+    "excerpt": "we didnt want it to work , but it did",
+    "category": "Native Vibes",
+    "date": "12",
+    "readTime": "1 min read",
+    "author": {
+      "name": "Jeremiah Balogun",
+      "role": "Product Designer",
+      "initials": "JB"
+    },
+    "variant": "green",
+    "coverImage": "https://res.cloudinary.com/dfxvgmbqg/image/upload/v1781531909/nativetalk-blog/nev5qa7v0wj3pwohpm3k.png",
+    "html": "<p>Jerry once <strong>said that </strong>\"we should all love ourselves\"</p><hr><img class=\"post-img\" src=\"https://res.cloudinary.com/dfxvgmbqg/image/upload/v1781532018/nativetalk-blog/zepqbevzzv1lq3fa9mzg.png\" alt=\"fgth\"><img class=\"post-img\" src=\"https://res.cloudinary.com/dfxvgmbqg/image/upload/v1781532025/nativetalk-blog/lug2kpiv4dv26dywce8b.png\" alt=\"fgth\"><p></p>"
+  },
+  {
+    "slug": "missing-calls-leads",
+    "title": "Missing Calls & Leads?",
+    "excerpt": "the key to a good business is communication and the sure thought of it is too stay good",
+    "category": "specs",
+    "date": "June 13, 2026",
+    "readTime": "1 min read",
+    "author": {
+      "name": "Jeremiah Balogun",
+      "role": "Product Desig",
+      "initials": "JB"
+    },
+    "variant": "ink",
+    "coverImage": "https://res.cloudinary.com/dfxvgmbqg/image/upload/v1781317951/nativetalk-blog/s9k2muvcukf8xh56yqwl.jpg",
+    "html": "<p>we should always be smart</p><img src=\"https://res.cloudinary.com/dfxvgmbqg/image/upload/v1781318139/nativetalk-blog/umofzwtv1thu7audnhiv.jpg\" alt=\"d268882004ba7390310fa2fbb4db89dd\"> lets be peoople of good cheer</p>"
+  },
+  {
+    "slug": "launch-call-center-24-hours",
+    "title": "How to launch a call center in 24 hours (really)",
+    "excerpt": "No hardware, no installers, no six-week rollout. A step-by-step playbook for going from zero to a live, routed call center in one working day.",
+    "category": "Playbook",
+    "date": "June 4, 2026",
+    "readTime": "7 min read",
+    "author": {
+      "name": "Amara Bello",
+      "role": "Head of Customer Success",
+      "initials": "AB"
+    },
+    "variant": "ink",
+    "html": "<p>The traditional call center rollout is measured in weeks: hardware procurement, PBX configuration, desk phone provisioning, and an IT team on standby. Cloud telephony collapses all of that into a browser tab.</p><p>Start with your numbers. In NativeTalk, you can claim local or toll-free numbers in 190+ countries in minutes — no SIM cards, no carrier contracts. Pick numbers that match where your customers are, not where your office is.</p><p>Next, build your call flow. The visual IVR builder lets you design menus, business-hours rules and overflow paths without writing a line of code. Most teams sketch their flow on paper first: what should a caller hear at 2pm on a Tuesday versus 2am on a Sunday?</p><p>Then add your agents. Every agent needs exactly one thing: a login. They take calls from the web app, the desktop app or their phone — the queue doesn't care which. Skills-based routing makes sure the French-speaking billing question lands with the French-speaking billing specialist.</p><p>Finally, switch on measurement from day one. Live wallboards show calls in queue, average wait and answer rates in real time, so you can re-balance staffing before customers feel it. Teams that launch with analytics enabled fix their routing mistakes in days, not quarters.</p><p>That's the whole playbook. The fastest team we've onboarded went from signup to first answered customer call in under four hours — and most of that was writing the IVR greeting copy.</p>"
+  },
+  {
+    "slug": "virtual-numbers-explained",
+    "title": "Virtual numbers, explained: business calling without a SIM",
+    "excerpt": "What exactly is a virtual number, how does it work without a SIM card, and why are fast-growing teams switching? A plain-language guide.",
+    "category": "Guide",
+    "date": "May 21, 2026",
+    "readTime": "5 min read",
+    "author": {
+      "name": "Jordan Diaz",
+      "role": "Product Marketing",
+      "initials": "JD"
+    },
+    "variant": "green",
+    "html": "<p>A virtual number is a real phone number that lives in the cloud instead of on a SIM card. Calls to it are routed over the internet to whatever device you choose — your mobile, your laptop, or an entire team's queue.</p><p>Because there's no SIM, there's no physical constraint. You can hold a San Francisco number while working from Lagos, give your support team a London presence without a London office, and add or retire numbers as fast as your business changes.</p><p>The separation matters as much as the flexibility. When work calls arrive on a dedicated business line, you know to answer professionally — and when you're off, voicemail and business-hours rules take over. Your personal number stays personal.</p><p>Virtual numbers also unlock features carrier lines can't offer: call recording, IVR menus, CRM screen-pops, analytics on every conversation, and instant rerouting when someone is sick or a queue backs up.</p><p>For teams, the economics are hard to argue with. No hardware, no per-line carrier contracts, no truck rolls. You pay for users and airtime, and the system scales from two founders to a two-hundred-seat floor without a migration.</p>"
+  },
+  {
+    "slug": "crm-integration-screen-pops",
+    "title": "Screen-pops and click-to-call: wiring calls into your CRM",
+    "excerpt": "Your CRM should know about every call before the agent says hello. How integrations, webhooks and click-to-call remove copy-paste from sales workflows.",
+    "category": "Engineering",
+    "date": "April 17, 2026",
+    "readTime": "6 min read",
+    "author": {
+      "name": "Rita Okafor",
+      "role": "Developer Relations",
+      "initials": "RO"
+    },
+    "variant": "cream",
+    "html": "<p>The most expensive part of a sales call isn't the airtime — it's the ninety seconds of typing afterwards. Manual logging is where pipelines go to die: numbers get transposed, notes get skipped and follow-ups never get scheduled.</p><p>Integration solves this in both directions. Inbound, a screen-pop opens the caller's CRM record before the agent answers, so nobody asks 'can you spell your name?' to a five-year customer. Outbound, click-to-call dials straight from the record and logs the call automatically — duration, outcome, recording link and all.</p><p>Under the hood it's deliberately boring: REST APIs and webhooks. Every call event — ringing, answered, ended, voicemail left — fires a webhook your stack can subscribe to. Native connectors cover the popular CRMs; the API covers everything else.</p><p>Developers get sandbox keys from day one, so you can build against test numbers without burning airtime. Most CRM integrations our customers build go from first API call to production in under a week.</p><p>The payoff compounds: when every conversation is captured automatically, your reporting stops lying to you. Pipeline reviews use real call data, coaching uses real recordings, and nobody reconstructs their week from memory on Friday afternoon.</p>"
+  }
+]
